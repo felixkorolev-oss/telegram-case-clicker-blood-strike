@@ -35,6 +35,10 @@ body {
 .clicker-area {
     text-align: center;
     margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; /* Достаточно места для кнопки */
 }
 
 .click-button {
@@ -53,6 +57,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: relative; /* Для абсолютного позиционирования внутри */
 }
 
 .click-button:active {
@@ -202,4 +207,5 @@ body {
     top: 15px;
     font-size: 24px;
     cursor: pointer;
+
 }

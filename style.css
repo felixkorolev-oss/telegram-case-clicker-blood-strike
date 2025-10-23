@@ -31,48 +31,57 @@ body {
     font-size: 18px;
 }
 
-/* Кликер */
+/* Кликер - увеличенная версия */
 .clicker-area {
     text-align: center;
-    margin: 30px 0;
+    margin: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px; /* Достаточно места для кнопки */
+    min-height: 250px;
 }
 
 .click-button {
-    width: 150px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border: none;
     border-radius: 50%;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    position: relative; /* Для абсолютного позиционирования внутри */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.click-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
 }
 
 .click-button:active {
     transform: scale(0.95);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .click-text {
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: 800;
 }
 
 .click-reward {
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0.9;
+    background: rgba(255,255,255,0.2);
+    padding: 4px 12px;
+    border-radius: 20px;
 }
 
 /* Кейсы */
@@ -209,4 +218,5 @@ body {
     cursor: pointer;
 
 }
+
 

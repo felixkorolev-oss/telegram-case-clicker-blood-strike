@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кликер с кейсами</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Статистика -->
+        <div class="stats">
+            <div class="balance">
+                <span class="coins">🪙</span>
+                <span id="coins">100</span>
+            </div>
+            <div class="level">
+                Уровень: <span id="level">1</span>
+            </div>
+        </div>
+
+        <!-- Основная кнопка кликера -->
+        <div class="clicker-area">
+            <button id="clickBtn" class="click-button">
+                <span class="click-text">КЛИК!</span>
+                <span class="click-reward">+1 монета</span>
+            </button>
+        </div>
+
+        <!-- Кейсы -->
+        <div class="cases-section">
+            <h3>🎁 Доступные кейсы</h3>
+            <div class="cases-grid">
+                <div class="case-item" data-price="10" data-reward="15-25">
+                    <div class="case-icon">📦</div>
+                    <div class="case-info">
+                        <div class="case-name">Обычный кейс</div>
+                        <div class="case-price">10 🪙</div>
+                    </div>
+                </div>
+                
+                <div class="case-item" data-price="50" data-reward="60-100">
+                    <div class="case-icon">💎</div>
+                    <div class="case-info">
+                        <div class="case-name">Редкий кейс</div>
+                        <div class="case-price">50 🪙</div>
+                    </div>
+                </div>
+                
+                <div class="case-item" data-price="100" data-reward="150-300">
+                    <div class="case-icon">🔥</div>
+                    <div class="case-info">
+                        <div class="case-name">Эпический кейс</div>
+                        <div class="case-price">100 🪙</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Улучшения -->
+        <div class="upgrades-section">
+            <h3>⚡ Улучшения</h3>
+            <div class="upgrades-list">
+                <div class="upgrade-item" data-cost="50" data-type="click">
+                    <span>💪 Усиленный клик</span>
+                    <span class="upgrade-cost">50 🪙</span>
+                </div>
+                <div class="upgrade-item" data-cost="100" data-type="auto">
+                    <span>🤖 Автокликер</span>
+                    <span class="upgrade-cost">100 🪙</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для кейсов -->
+    <div id="caseModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>🎉 Поздравляем!</h2>
+            <div id="rewardAmount" class="reward-amount">+25 🪙</div>
+            <p>Вы открыли кейс и получили:</p>
+            <button id="closeModal" class="modal-btn">Забрать награду</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

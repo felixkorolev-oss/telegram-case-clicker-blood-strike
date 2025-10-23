@@ -1,2 +1,1 @@
-# telegram-case-clicker-blood-strike
-Telegram Mini App - РРіСЂР° РєР»РёРєРµСЂ СЃ РєРµР№СЃР°РјРё РїРѕ РёРіСЂРµ BloodStrike
+# Case Clicker - Telegram Mini AppИгра-кликер с кейсами для Telegram.## Особенности- ?? Кликер с анимацией- ?? Три типа кейсов- ? Улучшения- ?? Сохранение прогресса
